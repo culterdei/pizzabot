@@ -34,9 +34,12 @@ if __name__ == '__main__':
 
     # Pizzabot arguments count check
     if len(sys.argv) < 2:
-        print('Not enought arguments')
+        print('Pizzabot not specified')
         sys.exit()
-
+    elif len(sys.argv) < 3:
+        print('Pizzabot arguments not specified')
+        sys.exit()
+        
     # Pizzabot command check
     if sys.argv[1] != 'pizzabot':
         print(f'It"s {sys.argv[1]}, not an pizzabot')
